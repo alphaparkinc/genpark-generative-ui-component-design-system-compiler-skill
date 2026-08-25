@@ -1,0 +1,38 @@
+{
+  "name": "genpark-generative-ui-component-design-system-compiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Generative UI design system compiler synthesizing production-grade Shadcn/Tailwind React TSX components with instant live sandboxes.",
+  "author": "genpark",
+  "category": "frontend-ai",
+  "tags": [
+    "generative-ui",
+    "v0-vercel",
+    "shadcn-ui",
+    "tailwind-css",
+    "react-compiler"
+  ],
+  "inputs": {
+    "component_prompt": {
+      "type": "string"
+    },
+    "design_system": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "component_id": {
+      "type": "string"
+    },
+    "tsx_code_length_bytes": {
+      "type": "integer"
+    },
+    "live_react_sandbox_url": {
+      "type": "string"
+    },
+    "copy_paste_npx_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
